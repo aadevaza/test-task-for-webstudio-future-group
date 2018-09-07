@@ -92,7 +92,103 @@ a {
   color: #a6a6a6;
 }
 
+.catalog__list {
+  list-style: none;
+}
+
+.catalog__filter {
+  border: none;
+}
+
 .catalog__filter-title {
   font-size: 20px;
-  color
+}
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #eb5825;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #db4510;
+}
+
+.button:active {
+  background-color: #b93a0e;
+  box-shadow: inset 0 3px 0 0 #952904;
+}
+
+.catalog__filter-link a {
+  color: #8a8a8a;
+  text-decoration: underline;
+}
+
+.clarification {
+  background-color: #ffffff;
+}
+
+.clarification__title {
+  font-size: 26px;
+}
+
+.clarification__list {
+  list-style: none;
+}
+
+.elements-reviews__title {
+  font-size: 25.99px;
+}
+
+.elements-reviews__link a {
+  font-size: 16px;
+  color: #eb5825;
+  text-decoration: underline;
+}
+
+.reviews__name {
+  font-size: 16px;
+}
+
+.reviews__text:not(:nth-of-type(4)) {
+  color: #8a8a8a;
+}
+
+.hide {
+    display: none;
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    border-bottom: 1px dashed #eb5825;
+    padding: 0;
+    color: #eb5825;
+    cursor: pointer;
+    display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: blue;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block;
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px;
+}
+
+.reviews_hidden {
+  margin-bottom: 10px;
 }
